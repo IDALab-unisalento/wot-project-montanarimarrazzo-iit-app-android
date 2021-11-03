@@ -1,0 +1,44 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Widget"/>
+
+    <style name="Widget.ScannerSubtitle">
+		<item name="android:textColor">@color/textSottotitolo</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Widget.ScannerTitle">
+		<item name="android:textColor">@color/textTitolo</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Widget.Button" parent="@style/Widget.MaterialComponents.Button.TextButton">
+		<item name="android:colorBackground">@color/background</item>
+		<item name="android:foreground">@color/textBtn</item>
+		<item name="android:minWidth">160dp</item>
+	</style>
+
+    <!-- Application theme. -->
+	<style name="AppTheme.DialogTheme" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert">
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorAccent">@color/primaryLight</item>
+	</style>
+
+	<style name="AppThemeBase" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+		<item name="android:windowBackground">@color/background</item>
+		<item name="alertDialogTheme">@style/AppTheme.DialogTheme</item>
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorAccent">@color/primaryLight</item>
+		<item name="buttonStyle">@style/Widget.Button</item>
+		<item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner</item> <!-- Required on pre-Lollipop to draw new spinner. -->
+	</style>
+
+	<style name="AppTheme" parent="@style/AppThemeBase">
+		<item name="android:selectableItemBackground">@drawable/abc_item_background_holo_light</item>
+	</style>
+
+    <style name="AppTheme.SplashScreen">
+		<item name="colorPrimaryDark">@android:color/transparent</item>
+	</style>
+
+</resources>

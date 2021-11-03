@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:textStyle="bold"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/containerNavigazione"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        android:visibility="visible">
+
+        <include layout="@layout/btn_indietro"></include>
+
+        <include layout="@layout/btn_home"></include>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnAvanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_avanti"
+            android:visibility="gone"
+            android:contentDescription="@string/avanti" />
+
+    </LinearLayout>
+
+    <include layout="@layout/linea_oriz"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Impostazioni Comando:"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:text="@string/numero_campioni"/>
+
+            <Spinner
+                android:background="@drawable/spinner_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/Sample_array"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinnerSample"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:text="@string/frequenza_hz"/>
+
+            <Spinner
+                android:background="@drawable/spinner_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/Freq_array"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinnerFreq"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:text="@string/guadagno"/>
+
+            <Spinner
+                android:background="@drawable/spinner_background"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/Gain_array"
+                android:layout_gravity="center"
+                android:spinnerMode="dialog"
+                android:id="@+id/spinnerGain"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/linea_oriz"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnStart"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                app:backgroundTint="@color/background"
+                android:textColor="@color/textBtn"
+                app:strokeColor="@color/btnBordo"
+                android:text="@string/start"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                app:backgroundTint="@color/background"
+                android:textColor="@color/btnDisable"
+                app:strokeColor="@color/btnDisable"
+                android:text="@string/stop"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

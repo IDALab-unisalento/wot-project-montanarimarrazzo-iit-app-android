@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".graph.GraficoActivity"
+    android:background="@color/white"
+    android:id="@+id/containerLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/containerNavigazione"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:visibility="visible">
+
+        <include layout="@layout/btn_indietro"></include>
+        <include layout="@layout/btn_home"></include>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/containerButton"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/btnSalvaFile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_salva"
+                android:background="@color/white"
+                android:contentDescription="@string/salva_csv" />
+
+            <ImageButton
+                android:id="@+id/btnEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_email"
+                android:background="@color/white"
+                android:contentDescription="@string/scrivi_email" />
+
+            <ImageButton
+                android:id="@+id/btnCondividi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_condividi"
+                android:background="@color/white"
+                android:contentDescription="@string/condividi" />
+
+            <ImageButton
+                android:id="@+id/btnZoom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_zoom"
+                android:background="@color/white"
+                android:contentDescription="@string/reset_zoom" />
+
+            <ImageButton
+                android:id="@+id/btnCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                app:srcCompat="@drawable/ic_cloud"
+                android:background="@color/white"
+                android:contentDescription="cloud" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btnAvanti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_avanti"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:contentDescription="@string/avanti" />
+
+    </LinearLayout>
+
+    <include layout="@layout/linea_oriz"/>
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="10dp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/multilineChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp" />
+
+</LinearLayout>

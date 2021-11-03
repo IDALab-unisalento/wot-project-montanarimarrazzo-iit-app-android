@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <color name="background">@color/white</color>
+
+    <color name="textSottotitolo">@color/primary</color>
+    <color name="textTitolo">@color/primary</color>
+    <color name="btnOpzione">@color/primary</color>
+    <color name="btnNavigazione">@color/primary</color>
+    <color name="textSpinner">@color/primary</color>
+    <color name="textBtn">@color/primary</color>
+    <color name="btnBordo">@color/primary</color>
+    <color name="btnDisable">@color/gray</color>
+
+    <color name="textBtnCerca">@color/primary</color>
+    <color name="primaryBackground">@color/white</color>
+
+    <color name="primary">@color/azzurro</color>
+    <color name="primaryLight">#FF003FFF</color>
+    <color name="dispConnesso">@color/green</color>
+    <color name="dispNonConnesso">@color/red</color>
+
+    <color name="textNomeDisp">@color/black</color>
+    <color name="textMacDisp">@color/black</color>
+    <color name="textNoDisp">#FFEA0000</color>
+
+    <!-- Common -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFEA0000</color>
+    <color name="green">#18AC3F</color>
+    <color name="lightGray">#FFF0F0F0</color>
+    <color name="redDark">#FFAA0000</color>
+    <color name="ocra">#FFCEA300</color>
+    <color name="azzurro">#FF007FFF</color>
+    <color name="oro_vecchio">#CFB53B</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="gray">#FFABABAB</color>
+</resources>

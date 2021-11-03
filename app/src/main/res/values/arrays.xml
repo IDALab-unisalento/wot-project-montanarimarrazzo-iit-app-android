@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Sample_array">
+        <item>201</item> <!-- Default -->
+        <item>401</item>
+        <item>801</item>
+        <item>1201</item>
+        <item>1601</item>
+        <item>2001</item>
+        <item>2401</item>
+    </string-array>
+    <string-array name="Freq_array">
+        <item>100</item> <!-- Default -->
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="Gain_array">
+        <item>1</item> <!-- Default -->
+    </string-array>
+</resources>

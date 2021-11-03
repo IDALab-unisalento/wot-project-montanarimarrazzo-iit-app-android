@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IIT-Monitor</string>
+
+    <!-- Button di Connessione -->
+    <string name="action_connect">CONNECT</string>
+    <string name="action_connecting">CONNECTING…</string>
+    <string name="action_disconnect">DISCONNECT</string>
+    <string name="action_disconnecting">DISCONNECTING…</string>
+
+    <string name="disp_sconosciuto">Nome Sconosciuto</string>
+    <string name="ble_no_supp">BLE NON SUPPORTATO!</string>
+    <string name="serv_no_supp">Il Dispositivo non ha i Servizi richiesti.</string>
+
+    <string name="permesso_negato">Permesso Negato.</string>
+    <string name="scanner_title">Seleziona un Dispositivo Nordic:</string>
+    <string name="scanner_Disp_title">DISPOSITIVI DISPONIBILI:</string>
+    <string name="scanner_vuoto_title">NESSUN DISPOSITIVO TROVATO</string>
+    <string name="scanner_vuoto">Attenzione: a partire da Android 6.0 bisogna attivare la Geolocalizzazione</string>
+    <string name="gps_obbligatorio">Attenzione: A partire da Android 6.0 per trovare Dispositivi BLE bisogna attivare la Geolocalizzazione.\nAprire impostazioni Posizione?</string>
+
+
+    <string name="frequenza_hz">Frequenza (Hz)</string>
+    <string name="guadagno">Guadagno</string>
+    <string name="numero_campioni">Numero Campioni</string>
+
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+
+    <string name="uart_feature_title">UART</string>
+
+    <string name="nome_dispositivo">NESSUN DISPOSITIVO CONNESSO</string>
+
+    <string name="uart_notification_action_disconnect">Disconnetti Dispositivo</string>
+    <string name="uart_notification_connected_message">%s connesso.</string>
+
+    <string name="exit">Exit</string>
+    <string name="indietro">Indietro</string>
+    <string name="avanti">Avanti</string>
+    <string name="reset_zoom">Reset Zoom</string>
+    <string name="condividi">Condividi</string>
+    <string name="scrivi_email">Scrivi Email</string>
+    <string name="salva_csv">Salva csv</string>
+
+    <string name="infoHeader1">N:</string>
+    <string name="infoHeader2">-Freq:</string>
+    <string name="infoHeader3">Hz</string>
+    <string name="infoHeader4">-Gain:</string>
+
+    <string name="gps_obbligatorio_title">ACCEDERE ALLA POSIZIONE</string>
+
+    <string name="ultimaActivity">Non ci sono altre schermate</string>
+    <string name="visualizza_disp_nordic">Visualizza Dispositivi Nordic</string>
+
+    <string name="si">SI</string>
+    <string name="no">NO</string>
+    <string name="titleExit">EXIT</string>
+    <string name="messageExit">"Sei sicuro di voler Uscire?"</string>
+    <string name="titlePerditaDati">"DATI NON SALVATI"</string>
+    <string name="messagePerditaDati">"Vuoi salvare i dati?"</string>
+    <string name="titleDispNoConn">"DISPOSITIVO NON CONNESSO"</string>
+    <string name="messageDispNoConn">"Premere su "CONNECT" e selezionare un Dispositivo Compatibile"</string>
+
+    <string name="cerca">Cerca</string>
+    <string name="annulla">Annulla</string>
+    <string name="clickOnStart">Premere su START</string>
+    <string name="clickConnect">Connettersi ad un dispositivo compatibile e premere su START</string>
+    <string name="home">Home</string>
+
+</resources>
